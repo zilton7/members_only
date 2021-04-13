@@ -1,13 +1,12 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!, only: %i[new create]
-  before_action :get_post, only: %i[show]
+  before_action :find_post, only: %i[show]
 
   def index
     @posts = Post.all
   end
 
-  def show
-  end
+  def show; end
 
   def new
     @post = Post.new
@@ -25,13 +24,13 @@ class PostsController < ApplicationController
     end
   end
 
-
   private
-  def get_post
+
+  def find_post
     @post = Post.find(params[:id])
   end
+
   def post_params
     params.require(:post).permit(:title, :body)
   end
-
 end
