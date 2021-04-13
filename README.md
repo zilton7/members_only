@@ -39,12 +39,12 @@ $ rails db:migrate
 $ rails server
 ```
 
-> In your browser, navigate to; fill the form to create an user
+> In your browser, navigate to posts/new; you need to be registered to create post
 ``` 
-$ http://localhost:3000/users/sign_up
+$ http://localhost:3000/posts/new
 ```
 
-> In order to see all posts, navigate to:
+> To register a new account, click on 'register', in order to see all posts, navigate to:
 ``` 
 $ http://localhost:3000
 ```
