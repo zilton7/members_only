@@ -2,8 +2,8 @@
 
 # PROJECT NAME
 
-In this project, we were implementing authentication system using 'Devise'. 
-So user can only access areas of site they are authorized to access.
+In this project, we were implementing an authentication system using 'Devise.' 
+So users can only access areas of the site they are authorized to access.
 
 ## Built With
 - Ruby on Rails
@@ -12,42 +12,19 @@ So user can only access areas of site they are authorized to access.
 
 ## Getting Started
 
-To get a local copy of the repository please run the following commands on your terminal: 
-
-``` 
-$ cd <folder> 
-```
-
-``` 
-$ git clone git@github.com:zilton7/members_only.git
-```
-``` 
-$ cd members_only 
-```
-
+To get a local copy of the repository, please run the following commands on your terminal: 
+`$ cd <folder>`
+`$ git clone git@github.com:zilton7/members_only.git`
+`$ cd members_only`
 > Run bundle
-``` 
-$ bundle install
+`$ bundle install`
+> Setup the database `$ rails db:setup`
+> Run the rails server `$ rails server`
+> In your browser, navigate to posts/new; you need to be registered to create a post `http://localhost:3000/posts/new`
 
-> Migrate the database
-``` 
-$ rails db:migrate 
-```
+> You can log in with the existing user email: zil@mail.com and password: 123456 or register a new account, click on 'register,' then you will be able to create a new post.
 
-> Run the rails server
-```
-$ rails server
-```
-
-> In your browser, navigate to posts/new; you need to be registered to create post
-``` 
-$ http://localhost:3000/posts/new
-```
-
-> To register a new account, click on 'register', in order to see all posts, navigate to:
-``` 
-$ http://localhost:3000
-```
+Otherwise, if you are not logged in, you will be able to see posts authors. You can check all posts with`http://localhost:3000.`
 
 ## AUTHOR
 
@@ -78,7 +55,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
+- Hat tip to anyone who's code was used
 - Inspiration
 - etc
 
