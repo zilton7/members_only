@@ -1,2 +1,10 @@
 <h1>All Posts</h1>
-<%= @posts.inspect %>
+
+
+<ul> 
+<% @posts.each do |post| %>
+    <li><%= post.title %> </li>    
+    <li><%= post.body %> </li>    
+    <li><%= post.user.name if signed_in? %> </li>    
+<% end %>
+</ul>
