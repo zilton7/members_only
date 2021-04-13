@@ -2,13 +2,13 @@
 
 # PROJECT NAME
 
-We were asked to create a RE-FORMER project in order to learn about Rails forms. We created User model and implemented the pages for showing all users (index), createing user (new), and updating user (edit).
+In this project, we were implementing authentication system using 'Devise'. 
+So user can only access areas of site they are authorized to access.
 
 ## Built With
 - Ruby on Rails
-- Active Record
-- Bootstrap 4
 - Ruby
+- Devise
 
 ## Getting Started
 
@@ -19,11 +19,15 @@ $ cd <folder>
 ```
 
 ``` 
-$ git clone git@github.com:garciajordy/re-former.git
+$ git clone git@github.com:zilton7/members_only.git
 ```
 ``` 
-$ cd re-former 
+$ cd members_only 
 ```
+
+> Run bundle
+``` 
+$ bundle install
 
 > Migrate the database
 ``` 
@@ -37,15 +41,10 @@ $ rails server
 
 > In your browser, navigate to; fill the form to create an user
 ``` 
-$ http://localhost:3000/users/new
+$ http://localhost:3000/users/sign_up
 ```
 
-> To edit an user, navigate to:
-``` 
-$ http://localhost:3000/users/2/edit
-```
-
-> In order to see all users, navigate to:
+> In order to see all posts, navigate to:
 ``` 
 $ http://localhost:3000
 ```
@@ -58,7 +57,7 @@ $ http://localhost:3000
 - Linkedin: [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/zil-norvilis/)
 - Twitter: [![](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/devnor7)
 
-👤 MARIJAN BRVAR
+**MARIJAN BRVAR**
 
 - GitHub: [@githubhandle](https://github.com/marijanbrvar)
 - Twitter: [@twitterhandle](https://twitter.com/marijanbrvar)
