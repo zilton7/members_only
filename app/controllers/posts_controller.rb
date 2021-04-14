@@ -13,11 +13,10 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(post_params)
-    @post.user = current_user
+    @post = current_user.posts.build(post_params)
     respond_to do |format|
       if @post.save
-        format.html { redirect_to @post, notice: 'post was created' }
+        format.html { redirect_to root_path, notice: 'post was created' }
       else
         format.html { render :new, status: :unprocessable_entity }
       end
