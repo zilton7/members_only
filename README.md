@@ -2,53 +2,29 @@
 
 # PROJECT NAME
 
-We were asked to create a RE-FORMER project in order to learn about Rails forms. We created User model and implemented the pages for showing all users (index), createing user (new), and updating user (edit).
+In this project, we were implementing an authentication system using 'Devise.' 
+So users can only access areas of the site they are authorized to access.
 
 ## Built With
 - Ruby on Rails
-- Active Record
-- Bootstrap 4
 - Ruby
+- Devise
 
 ## Getting Started
 
-To get a local copy of the repository please run the following commands on your terminal: 
+To get a local copy of the repository, please run the following commands on your terminal: 
+`$ cd <folder>`
+`$ git clone git@github.com:zilton7/members_only.git`
+`$ cd members_only`
+> Run bundle
+`$ bundle install`
+> Setup the database `$ rails db:setup`
+> Run the rails server `$ rails server`
+> In your browser, navigate to posts/new; you need to be registered to create a post `http://localhost:3000/posts/new`
 
-``` 
-$ cd <folder> 
-```
+> You can log in with the existing user email: zil@mail.com and password: 123456 or register a new account, click on 'register,' then you will be able to create a new post.
 
-``` 
-$ git clone git@github.com:garciajordy/re-former.git
-```
-``` 
-$ cd re-former 
-```
-
-> Migrate the database
-``` 
-$ rails db:migrate 
-```
-
-> Run the rails server
-```
-$ rails server
-```
-
-> In your browser, navigate to; fill the form to create an user
-``` 
-$ http://localhost:3000/users/new
-```
-
-> To edit an user, navigate to:
-``` 
-$ http://localhost:3000/users/2/edit
-```
-
-> In order to see all users, navigate to:
-``` 
-$ http://localhost:3000
-```
+Otherwise, if you are not logged in, you will be able to see posts authors. You can check all posts with`http://localhost:3000.`
 
 ## AUTHOR
 
@@ -57,6 +33,15 @@ $ http://localhost:3000
 - Github: [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zilton7)
 - Linkedin: [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/zil-norvilis/)
 - Twitter: [![](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/devnor7)
+
+**MARIJAN BRVAR**
+
+- GitHub: [@githubhandle](https://github.com/marijanbrvar)
+- Twitter: [@twitterhandle](https://twitter.com/marijanbrvar)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/marijanbrvar)
+
+![Marijan's GitHub stats](https://github-readme-stats.vercel.app/api?username=marijanbrvar&count_private=true&theme=dark&show_icons=true)
+
 
 ## Contributing
 
@@ -70,7 +55,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
+- Hat tip to anyone who's code was used
 - Inspiration
 - etc
 

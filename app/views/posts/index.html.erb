@@ -1,0 +1,18 @@
+<h1>All Posts</h1>
+
+<table>
+<th>Title</th>
+<th>Body</th>
+<th>Author</th>
+<tbody>
+<% @posts.each do |post| %>
+<tr>
+    <td><%= post.title %> </td>    
+    <td><%= post.body %> </td>    
+    <td><%= post.user.name if signed_in? %> </td>
+    </tr>
+<% end %>
+</tbody>
+</table>
+<br/>
+<%= link_to 'Add Post', new_post_path if signed_in? %>

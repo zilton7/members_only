@@ -1,0 +1,7 @@
+<h1>Show post</h1>
+
+<ul> 
+    <li><%= @post.title %> </li>    
+    <li><%= @post.body %> </li>    
+    <li><%= @post.user.name if signed_in? %> </li>    
+</ul>
